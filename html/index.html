@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmiFy - Free Web Music Player For Everyone:</title>
+    <link rel="ICON" href="/images/CosmiFy-icon.png" type="image/png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utility.css">
+
+</head>
+
+<body>
+
+    <div class="container flex bg-black">
+
+        <div class="left">
+            <div class="home bg-grey rounded mx-1 p-1">
+                <div class="logo">
+                    <img class="invert" width="150" src="../icons/Spotify-Black-Logo.wine.svg" alt="logo">
+                </div>
+                <ul class="">
+                    <li><img class="close invert" src="../icons/close.svg" alt="close"></li>
+                    <li><img class="invert" src="../icons/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="../icons/search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded mx-1 p-1 sm-text">
+                <div class="heading">
+                    <img class="invert" src="../icons/playlist.svg" alt="">
+                    <h2>Your Library</h2>
+                </div>
+
+                <div class="songList">
+                    <ul>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div> <a href="#"> <span>Legal</span> </a> </div>
+                    <div> <a href="#"> <span>Safety & Privacy Center</span> </a> </div>
+                    <div> <a href="#"> <span>Privacy Policy</span> </a> </div>
+                    <div> <a href="#"> <span>Cookies</span> </a> </div>
+                    <div> <a href="#"> <span>About Ads</span> </a> </div>
+                    <div> <a href="#"> <span>Accessibility</span> </a> </div>
+                    <div> <a href="#"> <span>Cookies</span> </a> </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <div class="nav">
+                    <img class="hamburger invert" src="../icons/hamburger.svg" alt="hamburgerMenu">
+                    <img class="arrow" src="../icons/left-arrow.svg" alt="left-arrow">
+                    <img class="arrow" src="../icons/right-arrow.svg" alt="right-arrow">
+                </div>
+                <div class="buttons">
+                    <a onClick="(function(){
+                        alert('Its Free Bro');
+                        return false;
+                        })()" class="paid pointer">Premium</a>
+                    <a onClick="(function(){
+                        alert('Using this site is support for me');
+                        return false;
+                        })()" class="paid pointer">Support</a>
+                    <a onClick="(function(){
+                        alert('Website only application');
+                        return false;
+                        })()" class="paid pointer">Download</a>
+                    <a class="sign-up pointer">Sign up</a>
+                    <a class="log-in pointer">Log in</a>
+                </div>
+                <img class="downArr" src="../icons/downArrow.svg" alt="">
+            </div>
+
+            <div class="spotifyPlaylist">
+                <h1>Music Playlists</h1>
+
+                <div class="cardContainer">
+                </div>
+
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div id="part" class="undSeekbar"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="aboutSong">
+
+                        <div class="songInfo">
+                        </div>
+                        <div class="songButtons">
+                            <img id="previous" src="../icons/prev.svg" alt="">
+                            <img id="play" src="../icons/player.svg" alt="">
+                            <img id="next" src="../icons/next.svg" alt="">
+                        </div>
+                        <div class="Timing">
+                            <div class="songTime"></div>
+                            <div class="volume">
+                                <img class="VolumeIcon" width="30px" src="../icons/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume" id="volume" class="volume-slider">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
